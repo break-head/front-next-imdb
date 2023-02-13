@@ -12,7 +12,6 @@ export default function Header() {
       </div>
       <div className="flex items-center space-x-5">
         <DarkModeSwitch />
-
         <Link href="/">
           <h className="text-2xl">
             <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">
