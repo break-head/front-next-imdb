@@ -12,9 +12,9 @@ export default async function Home({ searchParams }) {
     { next: { revalidate: 10000 } }
   );
 
-  if (!res.ok) {
-    throw new Error("Error fetching data");
-  }
+  // if (!res.ok) {
+  //   throw new Error("Error fetching data");
+  // }
   const data = await res.json();
   const results = data.results;
 
