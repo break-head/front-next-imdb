@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 
 export default function NavbarItem({ title, param }) {
   const searchParams = useSearchParams();
-  console.log(searchParams);
+
   const genre = searchParams.get("genre");
 
   return (
