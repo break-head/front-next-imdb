@@ -18,11 +18,12 @@ export default function Card({ result }) {
           className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
           placeholder="blur"
           blurDataURL="/spinner.svg"
-          style={{ maxWidth: "100%", height: "auto" }}
+          style={{ maxWidth: "100%", height: "300px" }}
         ></Image>
-
         <p className="line-clamp-2 text-md">{result.overview}</p>
-        <h2 className="truncate text-lg font-bold">{result.title}</h2>
+        <h2 className="truncate text-lg font-bold">
+          {result.title || result.name}
+        </h2>
         <p className="flex items-center">
           {result.release_date} <FiThumbsUp className="h-5 mr-1 ml-3" />
           {result.vote_count}
